@@ -7,7 +7,7 @@ exports.handler = async (event, context, callback) => {
     password: process.env.DB_PASS,
     port: 5432,
     host: process.env.DB_HOST,
-    ssl: { rejectUnauthorized: false }
+    ssl: true
   })
   
 
