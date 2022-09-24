@@ -13,7 +13,7 @@ exports.handler = async (event, context, callback) => {
     })
 
 
-    await pool.connect()
+    // await pool.connect()
     // const data = await pool.query('SELECT * FROM tabledata')
     callback(null, {
       statusCode: 200,
