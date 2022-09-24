@@ -14,10 +14,10 @@ exports.handler = async (event, context, callback) => {
 
 
     await pool.connect()
-    const data = await pool.query('SELECT * FROM tabledata')
+    // const data = await pool.query('SELECT * FROM tabledata')
     callback(null, {
       statusCode: 200,
-      body: JSON.stringify(data.rows)
+      body: JSON.stringify('hello')
     })
   } catch (error) {
     callback(null, {
