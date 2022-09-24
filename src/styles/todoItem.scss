@@ -1,0 +1,65 @@
+.todoItem {
+  border-bottom: 1px solid $greySecondary;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr 200px 200px;
+  height: 58px;
+
+  .clickable {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+    .svg {
+      width: 15px;
+      height: 15px;
+      stroke: $black;
+      margin-left: 10px;
+    }
+
+    .span {
+      margin-left: 20px;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $black;
+      border-radius: 50%;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.checked {
+        border-color: $blue;
+        box-shadow: 0px 4px 4px rgba(19, 78, 193, 0.15);
+      }
+
+    }
+  }
+
+  .active {
+    color: $blue;
+    .svg{
+      stroke: $blue;
+    }
+    &:hover {
+      cursor: unset;
+    }
+  }
+
+  .blue {
+    color: $blue;
+  }
+
+  .orange {
+    color: $orange;
+  }
+}
