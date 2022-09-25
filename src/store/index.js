@@ -90,6 +90,7 @@ export default createStore({
     },
     setFilterValues ({ commit }, newFilterValues) {
       commit('setFilterValues', newFilterValues)
+      commit('setActivePage', 1)
     }
   },
   modules: {
