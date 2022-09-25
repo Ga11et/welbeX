@@ -1,19 +1,8 @@
-# welbex
+# Link to deployed project
+## https://welbexfyodor.netlify.app/
 
-## Project setup
-```
-yarn install
-```
+# Link to backend repository
+## https://github.com/Ga11et/welbexback
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Deployed backend on heroku:
+## https://fyodorwelbex.herokuapp.com/
