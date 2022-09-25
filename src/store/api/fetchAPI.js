@@ -1,6 +1,6 @@
 export const fetchAPI = {
   async fetchData () {
-    const response = await fetch(process.env.VUE_APP_URL + 'fetchData').then(resp => resp.json())
-    return response
+    const response = await fetch('https://fyodorwelbex.herokuapp.com/').then(resp => resp.json())
+    return response.rows
   }
 }

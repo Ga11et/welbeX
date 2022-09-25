@@ -89,7 +89,6 @@ export default createStore({
       commit('setActivePage', newActive)
     },
     setFilterValues ({ commit }, newFilterValues) {
-      console.log(newFilterValues)
       commit('setFilterValues', newFilterValues)
     }
   },
