@@ -68,7 +68,7 @@ export default createStore({
     },
     setActivePage (state, payload) {
       if (payload === 0) return
-      if (payload > Math.ceil(state.dataCount / state.itemsOnPage)) return
+      if (payload > Math.ceil(state.tableData.length / state.itemsOnPage)) return
       state.activePage = payload
     },
     setFilterValues (state, payload) {
